@@ -1,9 +1,10 @@
 <script>
 	import Headline from '$lib/Headline.svelte';
+	import TextLayout from '$lib/TextLayout.svelte';
 </script>
 
 <Headline>Privacy Policy</Headline>
-<div class="flex flex-col gap-4">
+<TextLayout>
 	<p>
 		This privacy policy governs the collection, use, and disclosure of personal information by
 		Daniel Hahn through hahnster.com. This policy applies only to information collected through this
@@ -67,10 +68,4 @@
 		info@hahnster.com.
 	</p>
 	<p>Last Updated: 2/4/2023</p>
-</div>
-
-<style lang="postcss">
-	h2 {
-		@apply text-2xl font-bold;
-	}
-</style>
+</TextLayout>
