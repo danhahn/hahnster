@@ -1,4 +1,4 @@
-<div class="grid gap-4">
+<div class="page grid gap-4">
 	<slot />
 </div>
 
@@ -6,7 +6,7 @@
 	:global(h2) {
 		@apply text-2xl font-bold;
 	}
-	:global(ul) {
+	:global(.page ul) {
 		@apply list-disc pl-4 grid gap-2;
 	}
 </style>
