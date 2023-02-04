@@ -18,7 +18,7 @@
 	<link rel="manifest" href="/site.webmanifest" />
 </svelte:head>
 
-<main class=" bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200">
+<main class="bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200">
 	<Navigation />
 	<section class="container max-w-4xl mx-auto p-10">
 		<slot />
@@ -28,7 +28,7 @@
 
 <style lang="postcss">
 	main {
-		height: var(--doc-height);
+		min-height: var(--doc-height);
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 	}
