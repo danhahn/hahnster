@@ -1,13 +1,31 @@
 <script lang="ts">
+	import { rgbToHex } from '$lib';
+
+	import { onMount } from 'svelte';
+
 	let isOpen = false;
 
 	function toggleOpen() {
 		isOpen = !isOpen;
 	}
 	$: hidden = !isOpen;
+
+	let nav: HTMLElement;
+	let color: string = 'white';
+
+	onMount(() => {
+		const rgb = getComputedStyle(nav).getPropertyValue('background-color');
+		color = rgbToHex(rgb);
+	});
 </script>
 
+<svelte:head>
+	<meta name="theme-color" content={color} />
+</svelte:head>
+
 <nav
+	bind:this={nav}
+	id="navigation"
 	class="sticky top-0 z-50 bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded dark:bg-slate-900"
 >
 	<div class="container flex flex-wrap items-center justify-between mx-auto">
