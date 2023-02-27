@@ -1,5 +1,8 @@
 <script>
 	import Headline from '$lib/Headline.svelte';
+	import Hero from '$lib/Hero.svelte';
 </script>
 
-<Headline className="text-center">Welcome to Hahnster</Headline>
+<Hero>
+	<Headline className="text-center">Welcome to Hahnster</Headline>
+</Hero>

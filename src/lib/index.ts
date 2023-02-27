@@ -1,6 +1,6 @@
 export const siteName = 'Hahnster';
 
-export function rgbToHex(rgb: string): string {
+export function rgbToHex(rgb = ''): string {
 	const rgbValues = rgb.match(/\d+/g).map((value) => parseInt(value));
 	return (
 		'#' +
