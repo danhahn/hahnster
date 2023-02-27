@@ -2,13 +2,15 @@
 	import { rgbToHex } from '$lib';
 
 	import { onMount } from 'svelte';
+	import NavLink from './NavLink.svelte';
+	import { navIsOpenState } from './stores/nav';
 
 	let isOpen = false;
 
 	function toggleOpen() {
-		isOpen = !isOpen;
+		navIsOpenState.set(!$navIsOpenState);
 	}
-	$: hidden = !isOpen;
+	$: hidden = !$navIsOpenState;
 
 	let nav: HTMLElement;
 	let color: string = 'white';
@@ -28,7 +30,7 @@
 	id="navigation"
 	class="sticky top-0 z-50 bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded dark:bg-slate-900"
 >
-	<div class="container flex flex-wrap items-center justify-between mx-auto">
+	<div class=" relative container flex flex-wrap items-center justify-between mx-auto">
 		<a href="/" class="flex items-center">
 			<svg class="w-56" viewBox="0 0 715 110" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g clip-path="url(#clip0_0_1)">
@@ -64,23 +66,21 @@
 				/></svg
 			>
 		</button>
-		<div class="w-full md:block md:w-auto" id="navbar-default" class:hidden>
+		<div
+			class="absolute md:static top-12 w-full md:block md:w-auto"
+			id="navbar-default"
+			class:hidden
+		>
 			<ul
-				class="flex flex-col p-4 mt-4 border border-slate-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-slate-700"
+				class="shadow-md shadow-teal-900 md:shadow-none flex flex-col p-4 mt-4 border border-slate-100 rounded-lg bg-slate-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-slate-800 md:dark:bg-slate-900 dark:border-slate-700"
 			>
 				<li>
-					<a href="/" aria-current="page">Home</a>
+					<NavLink href="/">Home</NavLink>
 				</li>
 				<li>
-					<a href="/about">About</a>
+					<NavLink href="/about">About</NavLink>
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
-
-<style lang="postcss">
-	a {
-		@apply block py-2 pl-3 pr-4 text-slate-700 rounded hover:bg-slate-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-slate-400 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent;
-	}
-</style>
