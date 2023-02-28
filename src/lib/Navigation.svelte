@@ -28,7 +28,7 @@
 <nav
 	bind:this={nav}
 	id="navigation"
-	class="sticky top-0 z-50 bg-white border-slate-200 px-2 sm:px-4 py-2.5 rounded dark:bg-slate-900"
+	class="sticky top-0 z-50 bg-white border-slate-200 px-2 sm:px-4 py-2.5 dark:bg-slate-900"
 >
 	<div class=" relative container flex flex-wrap items-center justify-between mx-auto">
 		<a href="/" class="flex items-center">
