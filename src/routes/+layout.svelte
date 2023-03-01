@@ -2,6 +2,7 @@
 	import '../app.css';
 	import Navigation from '$lib/Navigation.svelte';
 	import Footer from '$lib/Footer.svelte';
+	import { siteName } from '$lib';
 
 	const documentHeight = () => {
 		const doc = document.documentElement;
@@ -12,7 +13,7 @@
 <svelte:body on:resize={documentHeight} />
 
 <svelte:head>
-	<title>Hahnster</title>
+	<title>{siteName}</title>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

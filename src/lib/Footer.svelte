@@ -6,18 +6,27 @@
 				<a href="/" class="hover:underline">Hahnster Brand</a>. All Rights Reserved.
 			</span>
 			<ul
-				class="flex flex-wrap items-center mt-3 text-sm text-slate-500 dark:text-slate-200 sm:mt-0"
+				class="flex flex-col md:flex-row flex-wrap gap-2 md:gap-8 md:items-center mt-3 text-sm text-slate-500 dark:text-slate-200 sm:mt-0"
 			>
 				<li>
-					<a href="/about" class="mr-4 hover:underline md:mr-6 ">About</a>
+					<a href="/about">About</a>
 				</li>
 				<li>
-					<a href="/legal/privacy-policy" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+					<a href="/legal/contact">Contact</a>
 				</li>
 				<li>
-					<a href="/legal/contact" class="hover:underline">Contact</a>
+					<a href="/legal/privacy-policy">Privacy Policy</a>
+				</li>
+				<li>
+					<a href="/legal/terms-and-conditions">Terms and Conditions</a>
 				</li>
 			</ul>
 		</div>
 	</footer>
 </div>
+
+<style lang="postcss">
+	a:hover {
+		@apply underline;
+	}
+</style>

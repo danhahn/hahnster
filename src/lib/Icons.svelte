@@ -54,7 +54,7 @@
 {#if displayIcon}
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		class={`fill-slate-700 dark:fill-slate-400 dark:hover:fill-white ${$$props.class}`}
+		class={`fill-slate-700 hover:fill-teal-700 dark:fill-slate-400 dark:hover:fill-white ${$$props.class}`}
 		viewBox="0 0 {displayIcon.box}"
 	>
 		{@html `<title>${title}</title>${displayIcon.svg}`}

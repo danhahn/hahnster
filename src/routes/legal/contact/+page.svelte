@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { siteName } from '$lib';
 	import Headline from '$lib/Headline.svelte';
 
 	let name: string;
@@ -11,6 +12,10 @@
 		console.log({ name, email, message });
 	};
 </script>
+
+<svelte:head>
+	<title>{siteName} | Contact Us</title>
+</svelte:head>
 
 <Headline>Contact Us</Headline>
 

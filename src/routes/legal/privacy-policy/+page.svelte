@@ -1,7 +1,12 @@
 <script>
+	import { siteName } from '$lib';
 	import Headline from '$lib/Headline.svelte';
 	import TextLayout from '$lib/TextLayout.svelte';
 </script>
+
+<svelte:head>
+	<title>{siteName} | Privacy Policy</title>
+</svelte:head>
 
 <Headline>Privacy Policy</Headline>
 <TextLayout>
