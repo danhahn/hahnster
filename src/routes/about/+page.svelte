@@ -1,8 +1,13 @@
 <script>
+	import { siteName } from '$lib';
 	import Headline from '$lib/Headline.svelte';
 	import Section from '$lib/Section.svelte';
 	import TextLayout from '$lib/TextLayout.svelte';
 </script>
+
+<svelte:head>
+	<title>{siteName} | About</title>
+</svelte:head>
 
 <Section>
 	<Headline>About Me</Headline>
