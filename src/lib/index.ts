@@ -24,7 +24,8 @@ export type Navigation = {
 
 export const navigation: Navigation[] = [
 	{ url: '/', text: 'Home' },
-	{ url: '/about', text: 'About' }
+	{ url: '/about', text: 'About' },
+	{ url: '/resume', text: 'Resume' }
 ];
 
 export const social: Navigation[] = [
