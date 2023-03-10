@@ -25,6 +25,7 @@ export type Navigation = {
 export const navigation: Navigation[] = [
 	{ url: '/', text: 'Home' },
 	{ url: '/about', text: 'About' },
+	{ url: '/blog', text: 'Blog' },
 	{ url: '/resume', text: 'Resume' }
 ];
 
