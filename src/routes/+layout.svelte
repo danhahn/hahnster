@@ -23,16 +23,15 @@
 
 <main class="bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200">
 	<Navigation />
-
-	<slot />
+	<section>
+		<slot />
+	</section>
 
 	<Footer />
 </main>
 
 <style lang="postcss">
 	main {
-		min-height: var(--doc-height);
-		display: grid;
-		grid-template-rows: auto 1fr auto;
+		min-height: 100dvh;
 	}
 </style>

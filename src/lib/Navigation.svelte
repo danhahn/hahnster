@@ -11,6 +11,7 @@
 	function toggleOpen() {
 		navIsOpenState.set(!$navIsOpenState);
 	}
+
 	$: hidden = !$navIsOpenState;
 
 	let nav: HTMLElement;
