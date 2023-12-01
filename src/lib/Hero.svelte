@@ -1,3 +1,7 @@
-<div class="h-20 lg:h-[30vh] bg-teal-800 dark:bg-teal-500 grid place-content-center">
-	<slot />
+<div class="hero min-h-[30vh] bg-base-200">
+	<div class="hero-content text-center">
+		<div class="max-w-md">
+			<slot />
+		</div>
+	</div>
 </div>
