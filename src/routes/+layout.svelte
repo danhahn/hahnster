@@ -21,7 +21,7 @@
 	<link rel="manifest" href="/site.webmanifest" />
 </svelte:head>
 
-<main class="bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-200">
+<main>
 	<Navigation />
 	<section>
 		<slot />
