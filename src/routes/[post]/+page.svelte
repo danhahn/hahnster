@@ -11,17 +11,13 @@
 	<meta property="og:description" content={data.meta.description} />
 </svelte:head>
 
-<pre>
-  {JSON.stringify(data, null, 2)}
-</pre>
-
-<article>
+<article class="container mx-auto">
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<p>Published on {data.meta.date}</p>
 	</hgroup>
 
-	<div class="prose">
+	<div class="prose lg:prose-xl">
 		<svelte:component this={data.content} />
 	</div>
 </article>

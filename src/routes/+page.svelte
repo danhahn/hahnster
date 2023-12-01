@@ -20,7 +20,7 @@
 	<Card
 		title="Megan and Mike 2024"
 		description="I built a website for my niece and her fiance to help them with their wedding planning. It was a fun project and I learned a lot about Svelte and Tailwind CSS."
-		link="https://www.meganandmike2024.com/"
+		link="/post-one"
 		image="/images/meganmike.png"
 		linkText="Learn more"
 	/>
