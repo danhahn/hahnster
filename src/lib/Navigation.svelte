@@ -30,7 +30,7 @@
 	<meta name="theme-color" content={color} />
 </svelte:head>
 
-<nav class="navbar fixed bg-base-100">
+<nav class="navbar bg-base-300">
 	<div class="flex-1">
 		<a href="/" class="flex items-center">
 			<Icons name="hahnster" title="Hahnster Brand" class="w-56" />
@@ -46,7 +46,7 @@
 
 			{#each social as { url, icon, text }}
 				<li>
-					<a href={url} target="_blank" rel="noreferrer"
+					<a href={url} target="_blank" rel="noreferrer" class="px-0 hover:bg-transparent"
 						><Icons title={text} name={icon} class="w-5" /></a
 					>
 				</li>

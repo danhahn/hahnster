@@ -11,7 +11,7 @@
 	<meta property="og:description" content={data.meta.description} />
 </svelte:head>
 
-<article class="container mx-auto">
+<article class="container max-w-4xl mx-auto pt-20">
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<p>Published on {data.meta.date}</p>
