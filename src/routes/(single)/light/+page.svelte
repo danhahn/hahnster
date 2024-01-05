@@ -1,11 +1,14 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
+
 	let on: boolean = false;
 	$: if (on) {
 		// set the screen to full screen
-		document.documentElement.requestFullscreen();
+
+		if (browser) document.documentElement.requestFullscreen();
 	} else {
 		// exit full screen
-		document.exitFullscreen();
+		if (browser) document.exitFullscreen();
 	}
 </script>
 
