@@ -12,15 +12,19 @@
 	}
 </script>
 
+<svelte:head>
+	<title>💡 Light 💡 | hahnster.com</title>
+</svelte:head>
+
 <div class="light" class:on>
 	<button on:click={() => (on = !on)}
-		>Turn
+		>💡 Turn
 		{#if on}
 			Off
 		{:else}
 			On
 		{/if}
-		Light</button
+		Light 💡</button
 	>
 </div>
 
@@ -29,8 +33,8 @@
 		height: 100vh;
 		display: grid;
 		place-items: center;
-		background: #000;
-		transition: all 1.3s ease-in-out;
+		background: #0e0e0e;
+		transition: all 0.1s ease-in-out;
 	}
 
 	.light.on {
