@@ -44,10 +44,6 @@
 		object-position: top;
 	}
 
-	.card__content {
-		padding: 1.5rem;
-	}
-
 	.card__title {
 		margin: 0 0 0.5rem 0;
 		font-size: 1.5rem;
